@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Ball | Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Navy */
+            --accent-color: #3498db;  /* Bright Blue */
+            --bg-color: #f0f2f5;      /* Light Grey Background */
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: #444;
+            padding-bottom: 50px;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Header Section */
+        .resume-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header-name {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header-contact a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .header-contact a:hover {
+            color: var(--accent-color);
+        }
+        .btn-hobby {
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 8px 25px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .btn-hobby:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        /* Content Cards */
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px; 
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Job Items */
+        .job-item {
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid #eee;
+            margin-bottom: 40px;
+        }
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #222;
+        }
+        .company-name {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .date-badge {
+            font-size: 0.9rem;
+            color: #777;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        /* Skills Badges */
+        .skill-badge {
+            background-color: #e9ecef;
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin: 0 5px 10px 0;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        /* List styling */
+        .job-details li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Education specifics */
+        .edu-stats {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: inline-block;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="resume-header text-center">
+        <div class="container">
+            <h1 class="header-name">NATHAN BALL</h1>
+            <div class="header-contact mt-3">
+                <a href="mailto:njb88@byu.edu"><i class="bi bi-envelope-fill"></i> njb88@byu.edu</a>
+                <a href="tel:2084848610"><i class="bi bi-telephone-fill"></i> (208) 484-8610</a>
+                <a href="https://instagram.com/1nathanball" target="_blank"><i class="bi bi-instagram"></i> @1nathanball</a>
+            </div>
+            <a href="scratch.html" class="btn-hobby">
+                <i class="bi bi-music-note-beamed"></i> View My Drums Project
+            </a>
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 900px;">
+        
+        <div class="content-card">
+            <h2 class="section-title"><i class="bi bi-mortarboard-fill"></i> Education</h2>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 5px;">Brigham Young University</h3>
+                    <p class="text-muted" style="font-size: 1.1rem;">Marriott School of Business</p>
+                    <p class="mb-1" style="font-size: 1.2rem;"><strong>BS Pre-Business (Marketing)</strong></p>
+                    <p class="text-muted small">Graduation: April 2025</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="edu-stats text-start text-md-center">
+                        <div class="mb-1"><strong>GPA:</strong> 3.85 / 4.00</div>
+                        <div><strong>ACT:</strong> 30 / 36</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title"><i class="bi bi-briefcase-fill"></i> Professional Experience</h2>
+            
+            <div class="job-item">
+                <div class="job-title">Customer Acquisition Strategy Intern</div>
+                <div class="company-name">Byram Healthcare | Provo, UT</div>
+                <span class="date-badge"><i class="bi bi-calendar3"></i> June 2025 - September 2025</span>
+                <ul class="job-details">
+                    <li>Developed and implemented a 6-phase growth strategy by optimizing the digital conversion funnel for insurance-covered products.</li>
+                    <li>Built a strategic partnership database of over 100 influencers to enhance brand authority and organic customer acquisition.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">Vehicle Acquisition Specialist</div>
+                <div class="company-name">Maverick Car Company | Meridian, ID</div>
+                <span class="date-badge"><i class="bi bi-calendar3"></i> June 2025 - September 2025</span>
+                <ul class="job-details">
+                    <li>Executed full-time position inspecting and buying vehicles for the #1 private dealership in Idaho.</li>
+                    <li>Analyzed complex market data to inform strategic buying decisions and cultivated strong rapport with high-value customers.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">Retail Associate & Footwear Technician</div>
+                <div class="company-name">Dick’s Sporting Goods | Meridian, ID</div>
+                <span class="date-badge"><i class="bi bi-calendar3"></i> Jan 2022 – Aug 2022</span>
+                <ul class="job-details">
+                    <li>Retail sales in the footwear department. Provided excellent customer service and trained new hires.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">Marketing & Business Ops Specialist</div>
+                <div class="company-name">Reader Zone | Eagle, ID</div>
+                <span class="date-badge"><i class="bi bi-calendar3"></i> Feb 2019 - Dec 2021</span>
+                <ul class="job-details">
+                    <li>Developed and optimized digital marketing campaigns for a software startup, contributing to user base expansion.</li>
+                    <li>Managed essential business operations including order processing, customer service, and inventory management.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">Interim CEO</div>
+                <div class="company-name">Childrensbookstore.com | Meridian, ID</div>
+                <span class="date-badge"><i class="bi bi-calendar3"></i> Apr 2020 - Dec 2020</span>
+                <ul class="job-details">
+                    <li>Assumed comprehensive business operations, including finance, logistics, and sales, after the founder pivoted focus due to pandemic market conditions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title"><i class="bi bi-people-fill"></i> Leadership & Service</h2>
+            <div class="job-item" style="border: none; padding-left: 0; margin-bottom: 0;">
+                <div class="job-title">Full-Time Missionary</div>
+                <div class="company-name">The Church of Jesus Christ of Latter-Day Saints</div>
+                <span class="date-badge">Bahia Blanca, Argentina | June 2023 - June 2025</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-card h-100">
+                    <h2 class="section-title"><i class="bi bi-tools"></i> Skills</h2>
+                    
+                    <p class="mb-2 text-muted small text-uppercase fw-bold">Languages</p>
+                    <div class="mb-3">
+                        <span class="skill-badge">Spanish (Superior OPI)</span>
+                    </div>
+
+                    <p class="mb-2 text-muted small text-uppercase fw-bold">Technical</p>
+                    <div class="mb-3">
+                        <span class="skill-badge">Audio Engineering</span>
+                        <span class="skill-badge">Video Production</span>
+                        <span class="skill-badge">Social Media Content</span>
+                    </div>
+
+                    <p class="mb-2 text-muted small text-uppercase fw-bold">Soft Skills</p>
+                    <div>
+                        <span class="skill-badge">Communication</span>
+                        <span class="skill-badge">Conflict Resolution</span>
+                        <span class="skill-badge">Problem-Solving</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-card h-100">
+                    <h2 class="section-title"><i class="bi bi-award-fill"></i> Awards & Certs</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <strong style="font-size: 1.1rem;">Music Production Certificate</strong><br>
+                            <span class="text-muted">Berklee College of Music</span>
+                        </li>
+                        <li>
+                            <strong style="font-size: 1.1rem;">Eagle Scout</strong><br>
+                            <span class="text-muted">Boy Scouts of America</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

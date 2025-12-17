@@ -1,0 +1,108 @@
+/* Custom Stylesheet for Scratch Page */
+
+/* 1. Font Family definition */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222529; /* Dark Concrete Grey to match photo background */
+    color: #eeeeee; /* Light grey text for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 2. Font Color definitions */
+h1, h2, h3 {
+    color: #fffedd; /* Red to match the Drum Kit */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Anchor link styling */
+a {
+    color: #08a8dd; /* Blue to match the Hoodie */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 3. Positioning Divs (Requirements met: 3 distinct divs) */
+
+/* DIV 1: Navigation Bar */
+.nav-bar {
+    background-color: #1a1c1f;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #fffedd; /* Red Border Accent */
+}
+
+/* DIV 2: Main Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2b2f35; /* Slightly lighter grey for content blocks */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* DIV 3: Flex container for Image/Text */
+.media-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #008ab8; /* Blue accent border */
+    padding-left: 20px;
+}
+
+/* Helper Class for images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+/* List styling */
+ul, ol {
+    margin-bottom: 20px;
+}
+
+
+
+/* ADD THIS TO THE BOTTOM OF YOUR STYLE.CSS */
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio for Video */
+    border: 2px solid #d12027; /* Red border to match theme */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Tableau needs a fixed height, not a ratio */
+.tableau-container {
+    width: 100%;
+    height: 600px;
+    border: 2px solid #008ab8;
+    border-radius: 8px;
+    overflow: hidden; /* This crops any content that is too wide */
+    box-sizing: border-box; /* This keeps the border INSIDE the 100% width */
+}
